@@ -2,6 +2,8 @@ package com.example.demo.Charactors;
 
 //エンティティクラス
 //フォームから情報受け取るクラス
+
+//githubでコメントが反映されているのかな？
 public class Charactors {
 	private int charaId;
 	private String charaName;
