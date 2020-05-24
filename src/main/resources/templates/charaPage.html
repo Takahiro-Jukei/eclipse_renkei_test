@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  href="/css/charaPage.css" th:href="@{/css/charaPage.css}">
+</head>
+<body>
+<h1>キャラデータ</h1>
+
+	<table>
+  <tr>
+    <td>技コマンド</td>
+    <td>技名</td>
+    <td>特徴</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>ファイアボール</td>
+    <td>バウンドしながら直進する火の玉を出す。</td>
+  </tr>
+  <tr>
+    <td>->B</td>
+    <td>スーパーマント</td>
+    <td>タイミングよく相手の飛び道具に合わせると跳ね返す。</td>
+  </tr>
+</table>
+
+<hr>
+
+<h1>キャラスレッド</h1>
+
+<div th:each="thread:${threadList}">
+	<a th:href="@{ /{charaName}/{threadId}(charaName=${charaName},threadId=*{thread.threadId}) }">[キャラ名]交流版[num]</a>
+</div>
+
+	管理人への問い合わせはこちらから
+	<form>
+		名前<input type=text>
+		問い合わせ内容<textarea></textarea>
+	</form>
+
+
+</body>
+</html>

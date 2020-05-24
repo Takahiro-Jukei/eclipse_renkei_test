@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+[トップ]<br>
+
+スマブラSP交流サイト<br>
+
+<a href="/">スマブラSP交流サイト</a>
+
+<hr>
+
+<div th:each="chara:${charaList}">
+	<a th:href="@{./{charaName}(charaName=*{chara.charaName})}" th:text="*{chara.charaName}"></a>
+</div>
+
+</body>
+</html>
