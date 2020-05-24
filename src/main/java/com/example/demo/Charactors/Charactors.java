@@ -4,6 +4,7 @@ package com.example.demo.Charactors;
 //フォームから情報受け取るクラス
 
 //githubでコメントが反映されているのかな？
+//githubでコメント反映その2　毎回アカウント名とか聞かれるのめんどくさいね
 public class Charactors {
 	private int charaId;
 	private String charaName;
